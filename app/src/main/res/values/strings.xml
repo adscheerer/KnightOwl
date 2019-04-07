@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Knight Owl</string>
     <string name="title_activity_friend_form">FriendFormActivity</string>
+    <string name="title_activity_transport_form">TransportFormActivity</string>
 </resources>
