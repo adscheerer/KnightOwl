@@ -1,33 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FriendFormActivity">
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.design.widget.AppBarLayout
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        android:background="@drawable/friendformbg"
 
-    </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_friend_form" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
-</android.support.design.widget.CoordinatorLayout>
+        tools:context=".FriendFormActivity">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="376dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:background="@drawable/textfieldbg"
+            android:ems="10"
+            android:hint="(650)555-9492"
+            android:inputType="phone"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="316dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:ems="10"
+            android:hint="(650)555-9492"
+            android:inputType="phone"
+            android:background="@drawable/textfieldbg"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:ems="10"
+            android:hint="(650)555-9492"
+            android:inputType="phone"
+            android:background="@drawable/textfieldbg"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/arrow"
+            android:onClick="start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.663" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
