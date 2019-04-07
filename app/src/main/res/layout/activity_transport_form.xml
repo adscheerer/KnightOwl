@@ -47,7 +47,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/driver-name"
+            android:id="@+id/driver_name"
             android:layout_width="227dp"
             android:layout_height="50dp"
             android:layout_marginTop="256dp"
@@ -61,7 +61,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/license-plate"
+            android:id="@+id/license_plate"
             android:layout_width="227dp"
             android:layout_height="50dp"
             android:layout_marginTop="320dp"
@@ -85,7 +85,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/submitbutton"
-            android:onClick="next"
+            android:onClick="submit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
