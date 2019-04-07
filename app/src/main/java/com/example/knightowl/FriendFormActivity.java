@@ -17,10 +17,10 @@ public class FriendFormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friend_form);
 
-        SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage("3102561148", null, "hi", null, null);
+        //SmsManager smsManager = SmsManager.getDefault();
+        //smsManager.sendTextMessage("3102561148", null, "hi", null, null);
 
-        smsManager.sendTextMessage("2137096889", null, "hi", null, null);
+        //smsManager.sendTextMessage("2137096889", null, "hi", null, null);
 
 
 
