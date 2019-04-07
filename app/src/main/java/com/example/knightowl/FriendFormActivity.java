@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.EditText;
 
@@ -16,11 +17,19 @@ public class FriendFormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friend_form);
 
+        SmsManager smsManager = SmsManager.getDefault();
+        smsManager.sendTextMessage("3102561148", null, "hi", null, null);
+
+        smsManager.sendTextMessage("2137096889", null, "hi", null, null);
+
+
+
 
     }
     public void next(View view)
     {
         Intent intent = new Intent(this, TransportFormActivity.class);
+
         Bundle extras = new Bundle();
         EditText p1 = findViewById(R.id.phone1);
         EditText p2 = findViewById(R.id.phone2);
