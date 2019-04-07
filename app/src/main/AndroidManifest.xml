@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".FirstSentActivity"
+            android:label="@string/title_activity_first_sent"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".TransportFormActivity"
             android:label="@string/title_activity_transport_form"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FriendFormActivity"
             android:label="@string/title_activity_friend_form"

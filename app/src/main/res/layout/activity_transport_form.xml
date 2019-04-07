@@ -1,10 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TransportFormActivity">
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-</android.support.design.widget.CoordinatorLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/transportformbg"
+
+
+        tools:context=".FriendFormActivity">
+
+        <EditText
+            android:id="@+id/start"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:background="@drawable/textfieldbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Current Location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/dest"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="192dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:background="@drawable/textfieldbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Destination"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/driver-name"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:background="@drawable/textfieldbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Lyft Driver Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/license-plate"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:background="@drawable/textfieldbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Lyft License Plate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="148dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/submitbutton"
+            android:onClick="next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.616" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
