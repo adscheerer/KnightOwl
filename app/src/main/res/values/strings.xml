@@ -4,4 +4,6 @@
     <string name="title_activity_transport_form">TransportFormActivity</string>
     <string name="title_activity_first_sent">FirstSentActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_arrived">ArrivedActivity</string>
 </resources>

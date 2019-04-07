@@ -21,14 +21,14 @@ public class FirstSentActivity extends AppCompatActivity {
 
     public void help(View view)
     {
-        Intent intent = new Intent(this, FirstSentActivity.class); // to be changed
+        Intent intent = new Intent(this, HelpActivity.class); // to be changed
         intent.putExtras(b);
         startActivity(intent);
     }
 
     public void isBack(View view)
     {
-        Intent intent = new Intent(this, FirstSentActivity.class); // to be changed
+        Intent intent = new Intent(this, ArrivedActivity.class); // to be changed
         intent.putExtras(b);
         startActivity(intent);
     }

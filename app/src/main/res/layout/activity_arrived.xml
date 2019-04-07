@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/arrivedbg"
+
+
+        tools:context=".FriendFormActivity">
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
